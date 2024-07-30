@@ -88,11 +88,6 @@ public class TestWord {
 
     }
 
-//    public void report() throws Exception {
-//        ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "cls -lumu");
-//        pb.command()
-//    }
-
     public void tearDown() throws Exception {
         driver.quit();
     }
