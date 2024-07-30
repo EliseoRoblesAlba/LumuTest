@@ -44,9 +44,8 @@ public class TestWord {
                 case "and" -> totalAnd++;
                 case "all" -> totalAll++;
             }
-
-
         }
+        
         System.out.println("word frequency: ");
         System.out.println("lumu: " + totalLumu);
         System.out.println("totalIlluminates: " + totalIlluminates);
@@ -54,7 +53,6 @@ public class TestWord {
         System.out.println("Adversaries: " + totalAdversaries);
         System.out.println("And: " + totalAnd);
         System.out.println("All: " + totalAll);
-
     }
 
     @Test
@@ -83,15 +81,9 @@ public class TestWord {
         Thread.sleep(5000);
         String text = driver.findElement(By.cssSelector("#editor_container > div:nth-child(7) > div > div:nth-child(1) > h4 > span")).getText();
         Assert.assertEquals(text, phraseEmpty);
-
         this.tearDown();
 
     }
-
-//    public void report() throws Exception {
-//        ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "cls -lumu");
-//        pb.command()
-//    }
 
     public void tearDown() throws Exception {
         driver.quit();
